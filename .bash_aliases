@@ -1,4 +1,10 @@
-alias ll='ls -l'
+export LS_OPTIONS='--color=auto'
+eval "`dircolors`"
+alias ls='ls $LS_OPTIONS'
+alias ll='ls $LS_OPTIONS -l'
+
+export HISTTIMEFORMAT="%d.%b/%H:%M:%S "
+export HISTSIZE=1000000
 
 [[ -f ~/.keychain/${HOSTNAME}-sh ]] && . ~/.keychain/${HOSTNAME}-sh
 
