@@ -6,6 +6,8 @@ alias ll='ls $LS_OPTIONS -l'
 export HISTTIMEFORMAT="%d.%b/%H:%M:%S "
 export HISTSIZE=1000000
 
+export PATH=$PATH:$HOME/bin
+
 [[ -f ~/.keychain/${HOSTNAME}-sh ]] && . ~/.keychain/${HOSTNAME}-sh
 
 function keychain-add {
